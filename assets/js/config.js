@@ -1,5 +1,5 @@
 export default {
-  apiUrl: 'https://stdrc.cc/api/',
+  apiUrl: 'https://blog.richardchien.cn/api/',
   entriesPerPage: 5,
   navItems: [
     { path: '/', text: 'Home' },
