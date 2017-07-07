@@ -12,8 +12,7 @@ export default {
   },
   async asyncData ({ params, error }) {
     try {
-      let { year, month, day, postName } = params
-      let { data: entry } = await blog.get(`/posts/${year}/${month}/${day}/${postName}/`)
+      let { data: entry } = await blog.get(`/posts/${params.year}/${params.month}/${params.day}/${params.post_name}/`)
       return {
         entry: entry
       }
