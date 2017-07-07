@@ -58,7 +58,7 @@ module.exports = {
       routes.push({
         name: 'customPage',
         path: '*',
-        component: resolve(__dirname, 'pages/_customPage.vue')
+        component: resolve(__dirname, 'custom_pages/customPage.vue')
       })
     }
   }
