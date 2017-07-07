@@ -9,7 +9,7 @@
         <div v-html="entry.content"></div>
       </article>
     </div>
-    <Disqus v-if="disqusEnabled" :shortName="disqusShortName" :url="rootUrl + entry.unique_key" :uniqueKey="entry.unique_key" />
+    <Disqus v-if="disqusEnabled" :key="entry.unique_key" :shortName="disqusShortName" :url="rootUrl + entry.unique_key" :uniqueKey="entry.unique_key" />
   </div>
 </template>
 
