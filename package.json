@@ -1,9 +1,9 @@
 {
-  "name": "blog",
+  "name": "verifront",
   "version": "1.0.0",
-  "description": "A VeriPress blog frontend.",
+  "description": "A VeriPress frontend.",
   "author": "Richard Chien <richardchienthebest@gmail.com>",
-  "private": true,
+  "private": false,
   "dependencies": {
     "axios": "^0.16.2",
     "nuxt": "latest"
