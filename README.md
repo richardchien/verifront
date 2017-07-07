@@ -12,7 +12,7 @@ $ cd verifront
 $ npm install
 ```
 
-Then configure the site in `assets/js/config.js`.
+Then configure the site in `assets/js/config.js` and replace favicons and logo in `static`.
 
 Finally, run
 

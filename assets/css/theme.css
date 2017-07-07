@@ -1,0 +1,397 @@
+@import url("https://fonts.proxy.ustclug.org/css?family=VT323");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    margin: 0;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+div {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a, a:focus, a:hover,
+#social svg, #social svg:hover {
+    transition: .25s;
+}
+
+a.button {
+    display: inline-block;
+    cursor: pointer;
+    background: #2f71d3;
+    border: 2px solid #2f71d3;
+    padding: 6px 12px;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+a.button:hover {
+    background: inherit;
+    color: #2f71d3;
+}
+
+hr {
+    height: 0.2em;
+    padding: 0;
+    margin: 18px 0;
+    background-color: #e7e7e7;
+    border: 0;
+}
+
+pre {
+    display: block;
+    overflow: auto;
+    overflow-wrap: normal;
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+code, pre {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 85%;
+}
+
+table {
+    display: block;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+table th, table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+table.table-clean {
+    width: 100%;
+}
+
+table.table-clean tr {
+    background-color: #fff;
+    border-top: none;
+}
+
+table.table-clean th, table.table-clean td {
+    padding: 6px 13px;
+    border: none;
+    border-left: 1px solid #ddd;
+}
+
+table.table-clean th:first-child,
+table.table-clean td:first-child {
+    border-left: none;
+    text-align: right;
+}
+
+.col-3, .col-7, .col-10 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+
+.col-3 *, .col-7 *, .col-10 * {
+    max-width: 100%;
+}
+
+.col-3 {
+    width: 30%;
+}
+
+.col-7 {
+    width: 70%;
+}
+
+.col-10 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background: #2f71d3;
+    color: #fff;
+    padding: 0 36px;
+    text-align: right;
+    border-right: 7px double #fff;
+    z-index: 10;
+    font-family: 'VT323', "Menlo", "Consolas", monospace;
+}
+
+#side > .side-content {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+#side svg {
+    fill: #fff;
+}
+
+#logo {
+    display: inline-block;
+    font-size: 0;
+}
+
+#logo svg,
+#logo img {
+    width: 90px;
+}
+
+#logo span {
+    text-indent: 9000em;
+    position: absolute;
+}
+
+#nav {
+    font-size: 24px;
+    margin: 36px 0;
+}
+
+#nav li {
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+#nav li a,
+#copyright > span a,
+#social svg {
+    border-bottom: 2px solid transparent;
+}
+
+#nav li.active a,
+#nav li a:hover,
+#copyright > span a:hover,
+#social svg:hover {
+    border-bottom-color: #fff;
+}
+
+#nav li {
+    list-style: none;
+}
+
+#social a {
+    margin: 0 1px;
+}
+
+#main {
+    left: 30%;
+    max-width: 56vw;
+    padding: 0 36px;
+    z-index: 1;
+}
+
+#main .entry {
+    margin: 0;
+    padding: 18px 0;
+    line-height: 1.5;
+}
+
+#main .entry h1 {
+    font-size: 1.8em;
+    color: #2f71d3;
+}
+
+#main .entry a:not(.button),
+.copyright a {
+    color: #2f71d3;
+    border-bottom: 2px solid transparent;
+}
+
+#main .entry a:not(.button):hover,
+.copyright a:hover {
+    border-bottom-color: #2f71d3;
+}
+
+#main .entry .meta {
+    line-height: 1.4;
+    font-size: 80%;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    border-left: 2px solid #2f71d3;
+    padding: 6px 12px;
+}
+
+#main .entry .meta .key {
+    text-transform: lowercase;
+}
+
+#main .entry .meta a:not(.button),
+#main .entry .toc a,
+.copyright a {
+    border-bottom-width: 0.1em;
+}
+
+#main .entry .toc ul {
+    margin: 0;
+    font-size: 92%;
+}
+
+#main .entry pre {
+    display: block;
+    padding: 16px;
+    overflow: auto;
+    overflow-wrap: normal;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 0;
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+#main .entry pre.txt {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+}
+
+#main .entry code {
+    color: #c7254e;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+}
+
+.pager {
+    margin: 24px 0 0;
+    padding: 0 0 32px;
+    list-style: none;
+    text-align: center;
+}
+
+.pager li {
+    display: inline;
+}
+
+.pager .previous > a, .pager .previous > span {
+    float: left;
+}
+
+.pager .next > a, .pager .next > span {
+    float: right;
+}
+
+.pager li > a, .pager li > span {
+    display: inline-block;
+}
+
+.copyright {
+    font-size: 80%;
+    padding: 36px 0 36px;
+}
+
+.copyright hr {
+    height: 0.1em;
+    margin: 12px 0;
+}
+
+@media (max-width: 900px) {
+    #side {
+        right: 0;
+        bottom: auto;
+        width: auto;
+        border-right: 0;
+        border-bottom: 7px double #fff;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+        height: 166px;
+        position: absolute;
+    }
+
+    .side-content {
+        transform: none;
+        height: 100%;
+    }
+
+    #logo {
+        margin: 24px 0 12px;
+    }
+
+    #logo svg,
+    #logo img {
+        width: 72px;
+    }
+
+    #nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    #nav li a {
+        display: inline-block;
+        padding: 12px 6px 0;
+    }
+
+    #nav li a.active:after {
+        content: '';
+    }
+
+    #social {
+        display: none;
+    }
+
+    #main {
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 166px;
+        padding: 0 24px;
+    }
+
+    #main .entry {
+        padding: 8px 0;
+    }
+
+    .pager {
+        padding: 16px 0 48px 0;
+    }
+}
