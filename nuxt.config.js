@@ -20,8 +20,8 @@ module.exports = {
     ]
   },
   css: [
-    '~assets/css/highlight.css',
     '~assets/css/theme.css',
+    '~assets/css/highlight.css',
     '~assets/css/transition.css'
   ],
   transition: {
