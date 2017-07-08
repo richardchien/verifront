@@ -16,8 +16,7 @@ module.exports = {
       { rel: 'icon', type: 'image/png', href: '/favicons/favicon-32x32.png', sizes: '32x32' },
       { rel: 'icon', type: 'image/png', href: '/favicons/favicon-16x16.png', sizes: '16x16' },
       { rel: 'manifest', href: '/favicons/manifest.json' },
-      { rel: 'mask-icon', href: '/favicons/safari-pinned-tab.svg', color: '#5bbad5' },
-      { rel: 'stylesheet', href: 'https://fonts.proxy.ustclug.org/css?family=VT323' }
+      { rel: 'mask-icon', href: '/favicons/safari-pinned-tab.svg', color: '#5bbad5' }
     ]
   },
   css: [
@@ -49,9 +48,9 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    vendor: ['axios']
   },
-  vendor: ['axios'],
   router: {
     extendRoutes (routes, resolve) {
       // route custom pages
