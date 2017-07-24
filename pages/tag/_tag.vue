@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Archive type="Tag" :name="tag" :entries="entries" />
+    <Archive type="Tag" :name="tag" :entries="entries" :key="'tag ' + tag" />
   </div>
 </template>
 

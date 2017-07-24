@@ -1,6 +1,6 @@
 <template>
   <div>
-    <EntryList :entries="entries" />
+    <EntryList :entries="entries" :key="'page ' + pageNum" />
     <ul class="pager">
       <li class="previous" v-if="hasOrder">
         <nuxt-link :to="`/page/${pageNum + 1}/`" class="button">← Older</nuxt-link>

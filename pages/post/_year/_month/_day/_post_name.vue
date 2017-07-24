@@ -1,5 +1,5 @@
 <template>
-  <EntryDetail :entry="entry" />
+  <EntryDetail :entry="entry" :key="entry.unique_key" />
 </template>
 
 <script>
