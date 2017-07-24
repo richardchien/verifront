@@ -1,5 +1,9 @@
 <template>
-  <EntryDetail :entry="entry" :key="entry.unique_key" />
+  <div>
+    <transition name="page" mode="out-in">
+      <EntryDetail :entry="entry" :key="entry.unique_key" />
+    </transition>
+  </div>
 </template>
 
 <script>

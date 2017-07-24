@@ -1,6 +1,8 @@
 <template>
   <div>
-    <EntryList :entries="entries" :key="'page ' + pageNum" />
+    <transition name="page" mode="out-in">
+      <EntryList :entries="entries" :key="'page ' + pageNum" />
+    </transition>
     <ul class="pager">
       <li class="previous" v-if="hasOrder">
         <nuxt-link :to="`/page/${pageNum + 1}/`" class="button">← Older</nuxt-link>

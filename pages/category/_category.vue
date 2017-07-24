@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Archive type="Category" :name="category" :entries="entries" :key="'category ' + category" />
+    <Archive type="Category" :name="category" :entries="entries" />
   </div>
 </template>
 
