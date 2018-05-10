@@ -6,7 +6,7 @@ export default {
     { path: '/', text: 'Home' },
     { path: '/about/', text: 'About' },
     { path: '/friends/', text: 'Friends' },
-    { path: '/cv/', text: 'CV' },
+    { path: 'https://hacknical.com/richardchien/resume', text: 'Resume' },
     { path: '/archive/', text: 'Archive' }
   ],
   disqusShortName: 'richardchien',
